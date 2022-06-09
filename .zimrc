@@ -17,6 +17,9 @@ zmodule b4b4r07/enhancd
 zmodule ntnyq/omz-plugin-pnpm
 zmodule unixorn/tumult.plugin.zsh
 zmodule grigorii-zander/zsh-npm-scripts-autocomplete
+zmodule wfxr/forgit
+zmodule ajeetdsouza/zoxide
+zmodule MichaelAquilina/zsh-you-should-use
 
 # Sets sane Zsh built-in environment options.
 
@@ -40,10 +43,6 @@ zmodule duration-info
 
 zmodule git-info
 
-# A heavily reduced, ASCII-only version of the Spaceship and Starship prompts.
-
-# zmodule asciiship
-
 #
 
 # Completion
@@ -52,13 +51,13 @@ zmodule git-info
 
 # Additional completion definitions for Zsh.
 
-# zmodule zsh-users/zsh-completions --fpath src
+zmodule zsh-users/zsh-completions --fpath src
 
 # Enables and configures smart and extensive tab completion.
 
 # completion must be sourced after all modules that add completion definitions.
 
-# zmodule completion
+zmodule completion
 
 #
 
@@ -70,16 +69,16 @@ zmodule git-info
 
 # zsh-users/zsh-syntax-highlighting must be sourced after completion
 
-# zmodule zsh-users/zsh-syntax-highlighting
+zmodule zsh-users/zsh-syntax-highlighting
 
 # Fish-like history search (up arrow) for Zsh.
 
 # zsh-users/zsh-history-substring-search must be sourced after zsh-users/zsh-syntax-highlighting
 
-# zmodule zsh-users/zsh-history-substring-search
+zmodule zsh-users/zsh-history-substring-search
 
 # Fish-like autosuggestions for Zsh.
 
-# zmodule zsh-users/zsh-autosuggestions
+zmodule zsh-users/zsh-autosuggestions
 
 # }}} End configuration added by Zim install
