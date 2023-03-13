@@ -1,23 +1,22 @@
+root = true
+
 [*]
 charset = utf-8
 end_of_line = lf
-indent_size = 4
+indent_size = 2
 indent_style = space
 insert_final_newline = true
-max_line_length = 120
-tab_width = 4
-trim_trailing_whitespace = true
+max_line_length = 100
+tab_width = 2
 ij_continuation_indent_size = 8
 ij_formatter_off_tag = @formatter:off
 ij_formatter_on_tag = @formatter:on
 ij_formatter_tags_enabled = false
 ij_smart_tabs = false
 ij_visual_guides = none
-ij_wrap_on_typing = false
+ij_wrap_on_typing = true
 
 [*.css]
-indent_size = 2
-tab_width = 2
 ij_continuation_indent_size = 2
 ij_css_align_closing_brace_with_properties = false
 ij_css_blank_lines_around_nested_selector = 1
@@ -30,7 +29,7 @@ ij_css_hex_color_lower_case = false
 ij_css_hex_color_short_format = false
 ij_css_hex_color_upper_case = false
 ij_css_keep_blank_lines_in_code = 1
-ij_css_keep_indents_on_empty_lines = false
+ij_css_keep_indents_on_empty_lines = true
 ij_css_keep_single_line_blocks = false
 ij_css_properties_order = font,font-family,font-size,font-weight,font-style,font-variant,font-size-adjust,font-stretch,line-height,position,z-index,top,right,bottom,left,display,visibility,float,clear,overflow,overflow-x,overflow-y,clip,zoom,align-content,align-items,align-self,flex,flex-flow,flex-basis,flex-direction,flex-grow,flex-shrink,flex-wrap,justify-content,order,box-sizing,width,min-width,max-width,height,min-height,max-height,margin,margin-top,margin-right,margin-bottom,margin-left,padding,padding-top,padding-right,padding-bottom,padding-left,table-layout,empty-cells,caption-side,border-spacing,border-collapse,list-style,list-style-position,list-style-type,list-style-image,content,quotes,counter-reset,counter-increment,resize,cursor,user-select,nav-index,nav-up,nav-right,nav-down,nav-left,transition,transition-delay,transition-timing-function,transition-duration,transition-property,transform,transform-origin,animation,animation-name,animation-duration,animation-play-state,animation-timing-function,animation-delay,animation-iteration-count,animation-direction,text-align,text-align-last,vertical-align,white-space,text-decoration,text-emphasis,text-emphasis-color,text-emphasis-style,text-emphasis-position,text-indent,text-justify,letter-spacing,word-spacing,text-outline,text-transform,text-wrap,text-overflow,text-overflow-ellipsis,text-overflow-mode,word-wrap,word-break,tab-size,hyphens,pointer-events,opacity,color,border,border-width,border-style,border-color,border-top,border-top-width,border-top-style,border-top-color,border-right,border-right-width,border-right-style,border-right-color,border-bottom,border-bottom-width,border-bottom-style,border-bottom-color,border-left,border-left-width,border-left-style,border-left-color,border-radius,border-top-left-radius,border-top-right-radius,border-bottom-right-radius,border-bottom-left-radius,border-image,border-image-source,border-image-slice,border-image-width,border-image-outset,border-image-repeat,outline,outline-width,outline-style,outline-color,outline-offset,background,background-color,background-image,background-repeat,background-attachment,background-position,background-position-x,background-position-y,background-clip,background-origin,background-size,box-decoration-break,box-shadow,text-shadow
 ij_css_space_after_colon = true
@@ -38,12 +37,8 @@ ij_css_space_before_opening_brace = true
 ij_css_use_double_quotes = true
 ij_css_value_alignment = do_not_align
 
-[*.haml]
-indent_size = 2
-ij_haml_keep_indents_on_empty_lines = false
-
 [*.less]
-indent_size = 2
+tab_width = 4
 ij_less_align_closing_brace_with_properties = false
 ij_less_blank_lines_around_nested_selector = 1
 ij_less_blank_lines_between_blocks = 1
@@ -66,8 +61,6 @@ ij_less_use_double_quotes = true
 ij_less_value_alignment = 0
 
 [*.sass]
-indent_size = 2
-tab_width = 2
 ij_continuation_indent_size = 2
 ij_sass_align_closing_brace_with_properties = false
 ij_sass_blank_lines_around_nested_selector = 1
@@ -78,8 +71,8 @@ ij_sass_hex_color_long_format = false
 ij_sass_hex_color_lower_case = false
 ij_sass_hex_color_short_format = false
 ij_sass_hex_color_upper_case = false
-ij_sass_keep_blank_lines_in_code = 1
-ij_sass_keep_indents_on_empty_lines = true
+ij_sass_keep_blank_lines_in_code = 2
+ij_sass_keep_indents_on_empty_lines = false
 ij_sass_keep_single_line_blocks = false
 ij_sass_line_comment_add_space = false
 ij_sass_line_comment_at_first_column = false
@@ -90,8 +83,6 @@ ij_sass_use_double_quotes = true
 ij_sass_value_alignment = 0
 
 [*.scss]
-indent_size = 2
-tab_width = 2
 ij_continuation_indent_size = 2
 ij_scss_align_closing_brace_with_properties = false
 ij_scss_blank_lines_around_nested_selector = 1
@@ -114,26 +105,6 @@ ij_scss_space_before_opening_brace = true
 ij_scss_use_double_quotes = true
 ij_scss_value_alignment = 0
 
-[*.styl]
-indent_size = 2
-ij_stylus_align_closing_brace_with_properties = false
-ij_stylus_blank_lines_around_nested_selector = 1
-ij_stylus_blank_lines_between_blocks = 1
-ij_stylus_brace_placement = 0
-ij_stylus_enforce_quotes_on_format = false
-ij_stylus_hex_color_long_format = false
-ij_stylus_hex_color_lower_case = false
-ij_stylus_hex_color_short_format = false
-ij_stylus_hex_color_upper_case = false
-ij_stylus_keep_blank_lines_in_code = 2
-ij_stylus_keep_indents_on_empty_lines = false
-ij_stylus_keep_single_line_blocks = false
-ij_stylus_properties_order = font,font-family,font-size,font-weight,font-style,font-variant,font-size-adjust,font-stretch,line-height,position,z-index,top,right,bottom,left,display,visibility,float,clear,overflow,overflow-x,overflow-y,clip,zoom,align-content,align-items,align-self,flex,flex-flow,flex-basis,flex-direction,flex-grow,flex-shrink,flex-wrap,justify-content,order,box-sizing,width,min-width,max-width,height,min-height,max-height,margin,margin-top,margin-right,margin-bottom,margin-left,padding,padding-top,padding-right,padding-bottom,padding-left,table-layout,empty-cells,caption-side,border-spacing,border-collapse,list-style,list-style-position,list-style-type,list-style-image,content,quotes,counter-reset,counter-increment,resize,cursor,user-select,nav-index,nav-up,nav-right,nav-down,nav-left,transition,transition-delay,transition-timing-function,transition-duration,transition-property,transform,transform-origin,animation,animation-name,animation-duration,animation-play-state,animation-timing-function,animation-delay,animation-iteration-count,animation-direction,text-align,text-align-last,vertical-align,white-space,text-decoration,text-emphasis,text-emphasis-color,text-emphasis-style,text-emphasis-position,text-indent,text-justify,letter-spacing,word-spacing,text-outline,text-transform,text-wrap,text-overflow,text-overflow-ellipsis,text-overflow-mode,word-wrap,word-break,tab-size,hyphens,pointer-events,opacity,color,border,border-width,border-style,border-color,border-top,border-top-width,border-top-style,border-top-color,border-right,border-right-width,border-right-style,border-right-color,border-bottom,border-bottom-width,border-bottom-style,border-bottom-color,border-left,border-left-width,border-left-style,border-left-color,border-radius,border-top-left-radius,border-top-right-radius,border-bottom-right-radius,border-bottom-left-radius,border-image,border-image-source,border-image-slice,border-image-width,border-image-outset,border-image-repeat,outline,outline-width,outline-style,outline-color,outline-offset,background,background-color,background-image,background-repeat,background-attachment,background-position,background-position-x,background-position-y,background-clip,background-origin,background-size,box-decoration-break,box-shadow,text-shadow
-ij_stylus_space_after_colon = true
-ij_stylus_space_before_opening_brace = true
-ij_stylus_use_double_quotes = true
-ij_stylus_value_alignment = 0
-
 [.editorconfig]
 ij_editorconfig_align_group_field_declarations = false
 ij_editorconfig_space_after_colon = false
@@ -143,6 +114,7 @@ ij_editorconfig_space_before_comma = false
 ij_editorconfig_spaces_around_assignment_operators = true
 
 [{*.ant,*.fxml,*.jhm,*.jnlp,*.jrxml,*.rng,*.tld,*.wsdl,*.xml,*.xsd,*.xsl,*.xslt,*.xul}]
+ij_continuation_indent_size = 2
 ij_xml_align_attributes = true
 ij_xml_align_text = false
 ij_xml_attribute_wrap = normal
@@ -162,9 +134,8 @@ ij_xml_space_inside_empty_tag = false
 ij_xml_text_wrap = normal
 
 [{*.ats,*.cts,*.mts,*.ts}]
-indent_size = 2
-tab_width = 2
 ij_continuation_indent_size = 2
+ij_visual_guides = 80
 ij_typescript_align_imports = false
 ij_typescript_align_multiline_array_initializer_expression = false
 ij_typescript_align_multiline_binary_operation = false
@@ -203,7 +174,7 @@ ij_typescript_class_brace_style = end_of_line
 ij_typescript_comma_on_new_line = false
 ij_typescript_do_while_brace_force = never
 ij_typescript_else_on_new_line = false
-ij_typescript_enforce_trailing_comma = whenmultiline
+ij_typescript_enforce_trailing_comma = remove
 ij_typescript_enum_constants_wrap = on_every_item
 ij_typescript_extends_keyword_wrap = off
 ij_typescript_extends_list_wrap = off
@@ -219,19 +190,19 @@ ij_typescript_force_semicolon_style = true
 ij_typescript_function_expression_brace_style = end_of_line
 ij_typescript_if_brace_force = never
 ij_typescript_import_merge_members = global
-ij_typescript_import_prefer_absolute_path = true
+ij_typescript_import_prefer_absolute_path = global
 ij_typescript_import_sort_members = true
 ij_typescript_import_sort_module_name = false
 ij_typescript_import_use_node_resolution = true
 ij_typescript_imports_wrap = on_every_item
 ij_typescript_indent_case_from_switch = true
-ij_typescript_indent_chained_calls = false
+ij_typescript_indent_chained_calls = true
 ij_typescript_indent_package_children = 0
 ij_typescript_jsdoc_include_types = false
-ij_typescript_jsx_attribute_value = based_on_type
+ij_typescript_jsx_attribute_value = braces
 ij_typescript_keep_blank_lines_in_code = 1
 ij_typescript_keep_first_column_comment = true
-ij_typescript_keep_indents_on_empty_lines = true
+ij_typescript_keep_indents_on_empty_lines = false
 ij_typescript_keep_line_breaks = true
 ij_typescript_keep_simple_blocks_in_one_line = false
 ij_typescript_keep_simple_methods_in_one_line = false
@@ -276,7 +247,7 @@ ij_typescript_space_before_finally_left_brace = true
 ij_typescript_space_before_for_left_brace = true
 ij_typescript_space_before_for_parentheses = true
 ij_typescript_space_before_for_semicolon = false
-ij_typescript_space_before_function_left_parenth = true
+ij_typescript_space_before_function_left_parenth = false
 ij_typescript_space_before_generator_mult = false
 ij_typescript_space_before_if_left_brace = true
 ij_typescript_space_before_if_parentheses = true
@@ -308,11 +279,11 @@ ij_typescript_spaces_within_brackets = false
 ij_typescript_spaces_within_catch_parentheses = false
 ij_typescript_spaces_within_for_parentheses = false
 ij_typescript_spaces_within_if_parentheses = false
-ij_typescript_spaces_within_imports = false
+ij_typescript_spaces_within_imports = true
 ij_typescript_spaces_within_interpolation_expressions = false
 ij_typescript_spaces_within_method_call_parentheses = false
 ij_typescript_spaces_within_method_parentheses = false
-ij_typescript_spaces_within_object_literal_braces = false
+ij_typescript_spaces_within_object_literal_braces = true
 ij_typescript_spaces_within_object_type_braces = true
 ij_typescript_spaces_within_parentheses = false
 ij_typescript_spaces_within_switch_parentheses = false
@@ -335,8 +306,6 @@ ij_typescript_while_on_new_line = false
 ij_typescript_wrap_comments = false
 
 [{*.bash,*.sh,*.zsh}]
-indent_size = 2
-tab_width = 2
 ij_shell_binary_ops_start_line = false
 ij_shell_keep_column_alignment_padding = false
 ij_shell_minify_program = false
@@ -345,9 +314,8 @@ ij_shell_switch_cases_indented = false
 ij_shell_use_unix_line_separator = true
 
 [{*.cjs,*.js}]
-indent_size = 2
-tab_width = 2
 ij_continuation_indent_size = 2
+ij_visual_guides = 80
 ij_javascript_align_imports = false
 ij_javascript_align_multiline_array_initializer_expression = false
 ij_javascript_align_multiline_binary_operation = false
@@ -384,7 +352,7 @@ ij_javascript_class_brace_style = end_of_line
 ij_javascript_comma_on_new_line = false
 ij_javascript_do_while_brace_force = never
 ij_javascript_else_on_new_line = false
-ij_javascript_enforce_trailing_comma = whenmultiline
+ij_javascript_enforce_trailing_comma = remove
 ij_javascript_extends_keyword_wrap = off
 ij_javascript_extends_list_wrap = off
 ij_javascript_field_prefix = _
@@ -455,7 +423,7 @@ ij_javascript_space_before_finally_left_brace = true
 ij_javascript_space_before_for_left_brace = true
 ij_javascript_space_before_for_parentheses = true
 ij_javascript_space_before_for_semicolon = false
-ij_javascript_space_before_function_left_parenth = true
+ij_javascript_space_before_function_left_parenth = false
 ij_javascript_space_before_generator_mult = false
 ij_javascript_space_before_if_left_brace = true
 ij_javascript_space_before_if_parentheses = true
@@ -487,11 +455,11 @@ ij_javascript_spaces_within_brackets = false
 ij_javascript_spaces_within_catch_parentheses = false
 ij_javascript_spaces_within_for_parentheses = false
 ij_javascript_spaces_within_if_parentheses = false
-ij_javascript_spaces_within_imports = false
+ij_javascript_spaces_within_imports = true
 ij_javascript_spaces_within_interpolation_expressions = false
 ij_javascript_spaces_within_method_call_parentheses = false
 ij_javascript_spaces_within_method_parentheses = false
-ij_javascript_spaces_within_object_literal_braces = false
+ij_javascript_spaces_within_object_literal_braces = true
 ij_javascript_spaces_within_object_type_braces = true
 ij_javascript_spaces_within_parentheses = false
 ij_javascript_spaces_within_switch_parentheses = false
@@ -513,19 +481,13 @@ ij_javascript_while_brace_force = never
 ij_javascript_while_on_new_line = false
 ij_javascript_wrap_comments = false
 
-[{*.gql,*.graphql,*.graphqls}]
-indent_size = 2
-tab_width = 2
-
-[{*.graphqlconfig,*.har,*.jsb2,*.jsb3,*.json,.babelrc,.eslintrc,.prettierrc,.stylelintrc,bowerrc,jest.config}]
-indent_size = 2
-tab_width = 2
+[{*.har,*.jsb2,*.jsb3,*.json,.babelrc,.eslintrc,.prettierrc,.stylelintrc,bowerrc,jest.config}]
 ij_continuation_indent_size = 2
 ij_json_array_wrapping = split_into_lines
 ij_json_keep_blank_lines_in_code = 0
 ij_json_keep_indents_on_empty_lines = false
 ij_json_keep_line_breaks = true
-ij_json_keep_trailing_comma = false
+ij_json_keep_trailing_comma = true
 ij_json_object_wrapping = split_into_lines
 ij_json_property_alignment = do_not_align
 ij_json_space_after_colon = true
@@ -537,12 +499,10 @@ ij_json_spaces_within_brackets = false
 ij_json_wrap_long_lines = false
 
 [{*.htm,*.html,*.sht,*.shtm,*.shtml}]
-indent_size = 2
-tab_width = 2
+max_line_length = 80
 ij_continuation_indent_size = 2
-ij_visual_guides = 80,120
-ij_wrap_on_typing = true
-ij_html_add_new_line_before_tags = body,div,a,p,form,h1,h2,h3
+ij_visual_guides = 80
+ij_html_add_new_line_before_tags = body,div,p,form,h1,h2,h3,img
 ij_html_align_attributes = true
 ij_html_align_text = true
 ij_html_attribute_wrap = normal
@@ -550,14 +510,14 @@ ij_html_block_comment_add_space = false
 ij_html_block_comment_at_first_column = true
 ij_html_do_not_align_children_of_min_lines = 0
 ij_html_do_not_break_if_inline_tags = title,h1,h2,h3,h4,h5,h6,p
-ij_html_do_not_indent_children_of_tags = html,body,thead,tbody,tfoot
+ij_html_do_not_indent_children_of_tags = html,thead,tbody,tfoot
 ij_html_enforce_quotes = true
-ij_html_inline_tags = abbr,acronym,b,basefont,bdo,big,br,cite,cite,code,dfn,em,font,i,img,input,kbd,label,q,s,samp,select,small,span,strike,strong,sub,sup,textarea,tt,u,var
-ij_html_keep_blank_lines = 2
+ij_html_inline_tags = abbr,acronym,b,basefont,bdo,big,cite,code,dfn,em,font,i,kbd,q,s,samp,small,span,strike,strong,sub,sup,textarea,tt,u,var
+ij_html_keep_blank_lines = 1
 ij_html_keep_indents_on_empty_lines = true
 ij_html_keep_line_breaks = true
 ij_html_keep_line_breaks_in_text = true
-ij_html_keep_whitespaces = false
+ij_html_keep_whitespaces = true
 ij_html_keep_whitespaces_inside = span,pre,textarea
 ij_html_line_comment_at_first_column = true
 ij_html_new_line_after_last_attribute = when_multiline
@@ -569,11 +529,18 @@ ij_html_space_around_equality_in_attribute = false
 ij_html_space_inside_empty_tag = true
 ij_html_text_wrap = normal
 
+[{*.http,*.rest}]
+indent_size = 0
+ij_continuation_indent_size = 4
+ij_http request_call_parameters_wrap = normal
+
 [{*.markdown,*.md}]
+ij_continuation_indent_size = 2
 ij_markdown_force_one_space_after_blockquote_symbol = true
 ij_markdown_force_one_space_after_header_symbol = true
 ij_markdown_force_one_space_after_list_bullet = true
 ij_markdown_force_one_space_between_words = true
+ij_markdown_format_tables = true
 ij_markdown_insert_quote_arrows_on_wrap = true
 ij_markdown_keep_indents_on_empty_lines = false
 ij_markdown_keep_line_breaks_inside_text_blocks = true
@@ -587,15 +554,16 @@ ij_markdown_wrap_text_if_long = true
 ij_markdown_wrap_text_inside_blockquotes = true
 
 [{*.toml,Cargo.lock,Cargo.toml.orig,Gopkg.lock,Pipfile,poetry.lock}]
+indent_size = 4
+tab_width = 4
 ij_toml_keep_indents_on_empty_lines = false
 
 [{*.yaml,*.yml}]
-indent_size = 2
 ij_yaml_align_values_properties = do_not_align
 ij_yaml_autoinsert_sequence_marker = true
 ij_yaml_block_mapping_on_new_line = false
 ij_yaml_indent_sequence_value = true
-ij_yaml_keep_indents_on_empty_lines = false
+ij_yaml_keep_indents_on_empty_lines = true
 ij_yaml_keep_line_breaks = true
 ij_yaml_sequence_on_new_line = false
 ij_yaml_space_before_colon = false

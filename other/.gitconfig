@@ -1,0 +1,9 @@
+[user]
+	email = roger.yee@sony.com
+	name = Roger Yee
+[pull]
+	rebase = false
+	ff = only
+[core]
+	editor = nvim
+	autocrlf = input

@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "downlevelIteration": true,
+    "typeRoots": [
+      "node_modules/@types",
+      "node_modules/@danmarshall/deckgl-typings",
+      "src/types",
+      "src/generated",
+      "@apollo/client/core",
+      "@apollo/client/utilities/observables"
+    ],
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "/@/*": ["./src/*"],
+      "/@viz/*": ["./src/viz/*"],
+      "/@viz": ["./src/viz"],
+      "viz/*": ["./src/viz/*"],
+      "viz": ["./src/viz"],
+      "/@/components/*": ["./src/components/*"],
+      "/@/components": ["./src/components"],
+      "/@iframe-code-editor": ["./iframes/typescript-editor/src/shared/index.ts"],
+    },
+    "types": ["vite/client"]
+  },
+  "include": ["src", "src/types/*", "./iframes/typescript-editor/src", "scripts/horizon"],
+  "exclude": ["node_modules", "iframes", "scripts"]
+}

@@ -1,0 +1,88 @@
+{
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "extends": [
+    "alloy",
+    "alloy/react",
+    "alloy/typescript",
+    "plugin:import/recommended",
+    "plugin:import/typescript",
+    "prettier"
+  ],
+  "plugins": [
+    "import",
+    "import-quotes",
+    "simple-import-sort",
+    "@emotion"
+  ],
+  "env": {},
+  // global variables
+  "globals": {
+    "React": true,
+    "google": true,
+    "mount": true,
+    "mountWithRouter": true,
+    "shallow": true,
+    "shallowWithRouter": true,
+    "context": true,
+    "expect": true,
+    "jsdom": true,
+    "JSX": true
+  },
+  "ignorePatterns": [
+    "src/generated/*"
+  ],
+  // custom rules
+  "rules": {
+    // import
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+    "import/first": "error",
+    "import/newline-after-import": "error",
+    "import/no-duplicates": "error",
+    "import-quotes/import-quotes": [
+      0,
+      "double"
+    ],
+    "import/no-unresolved": 0,
+    // punctuation
+    "@typescript-eslint/consistent-type-assertions": 0,
+    "@typescript-eslint/no-duplicate-enum-values": 0,
+    "@typescript-eslint/no-unused-expressions": 0,
+    "@typescript-eslint/prefer-for-of": 0,
+    "@typescript-eslint/prefer-optional-chain": 0,
+    "complexity": 0,
+    "jsx-quotes": [
+      0,
+      "prefer-double"
+    ],
+    "max-nested-callbacks": "off",
+    "max-nested-callbacksL": 0,
+    "max-params": 0,
+    "no-case-declarations": 0,
+    "no-import-assign": 0,
+    "no-param-reassign": 0,
+    "no-return-assign": 0,
+    "no-undef": 0,
+    "no-unsafe-optional-chaining": 0,
+    "no-unused-expressions": "off",
+    "prefer-promise-reject-errors": 0,
+    "quotes": [
+      0,
+      "single"
+    ],
+    "radix": "off",
+    "react/no-unescaped-entities": 0,
+    "import/no-named-as-default": 0,
+    // emotion
+    "@emotion/jsx-import": "error",
+    "@emotion/no-vanilla": "error",
+    "@emotion/pkg-renaming": "error",
+    // no-new-native-constructor
+    "no-new-native-nonconstructor": 0
+    //  }
+  }
+}
